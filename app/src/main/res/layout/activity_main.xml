@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp">
+<Spinner android:id="@+id/dashboardSpinner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<com.aria.app.ThreeDView android:id="@+id/threeDView" android:layout_width="match_parent" android:layout_height="120dp"/>
+<FrameLayout android:id="@+id/dashboardContainer" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+<TextView android:id="@+id/dashboardContent" android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="16sp"/>
+</FrameLayout>
+<EditText android:id="@+id/input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Talk to ARIA"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+<Button android:id="@+id/mic" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Mic"/>
+<Button android:id="@+id/send" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Send"/>
+</LinearLayout>
+<TextView android:id="@+id/chat" android:layout_width="match_parent" android:layout_height="180dp" android:scrollbars="vertical"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ARIA</string>
+    <string name="accessibility_description">ARIA automation service</string>
+</resources>
