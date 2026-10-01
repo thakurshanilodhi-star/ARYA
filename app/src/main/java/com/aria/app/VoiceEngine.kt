@@ -22,4 +22,4 @@ class VoiceEngine(private val context:Context): TextToSpeech.OnInitListener {
     fun speak(text:String){if(ttsReady)tts.speak(text,TextToSpeech.QUEUE_FLUSH,null,"aria-reply")}
     fun release(){recognizer?.destroy();tts.shutdown()}
 }
-object IntentFactory{fun voiceIntent()=android.content.Intent(SpeechRecognizer.ACTION_RECOGNIZE_SPEECH).apply{putExtra(SpeechRecognizer.EXTRA_LANGUAGE_MODEL,SpeechRecognizer.LANGUAGE_MODEL_FREE_FORM);putExtra(SpeechRecognizer.EXTRA_LANGUAGE,Locale.getDefault())}}
+object IntentFactory{fun voiceIntent()=android.content.Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply{putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);putExtra(RecognizerIntent.EXTRA_LANGUAGE,Locale.getDefault())}}
